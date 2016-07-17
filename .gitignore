@@ -1,0 +1,5 @@
+/typings/*
+!/typings/custom.d.ts
+/node_modules/*
+/app/vendor/*
+/app/build/*

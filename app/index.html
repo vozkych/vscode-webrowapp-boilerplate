@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>webrowapp</title>
+	<link rel="stylesheet" type="text/css" href="./build/css/style.css" />
+	<script type="text/javascript" src="./vendor/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./vendor/knockout/dist/knockout.js"></script>
+	<script type="text/javascript" src="./build/js/app.js"></script>
+</head>
+<body>
+
+<div id="bindroot" class="container">
+    <h1>webrowapp</h1>
+
+    <div data-bind="visible: IsDisplayed">
+		<span data-bind="html: SecureMessage">There is something secure to hide...</span>
+    </div>
+	<p>
+		You can unhide the truth!
+		<button data-bind="click: ShowMeTheTruth">Show me the truth</button>
+	</p>
+</div>
+
+<script type="text/javascript">
+
+   (function () {
+
+		var options = {
+			initialyHidden: true
+		};
+		var vm = new WBA.ViewModel(options);
+
+		vm.Init(document.getElementById("bindroot"));
+
+	})();
+
+</script>
+
+</body>
+</html>

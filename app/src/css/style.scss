@@ -1,0 +1,21 @@
+// SCSS SASS Stylesheet, needs SASS transpiler for VS2013, e.g. Web Essentials for VS2013, Sassy Studio, etc.
+
+$debugBorder: 1px dashed red;
+//$debugBorder: 0;
+
+// Constants definition
+$bodyColor: #5d5d5d;
+$bodyFontFamily: Helvetica, Arial, sans-serif;
+// Calculated properties
+
+// Rule sets
+body {
+	color: $bodyColor;
+	font-family: $bodyFontFamily;
+}
+
+h1 {
+	font-size: 30px;
+	margin: auto;
+	margin-top: 50px;
+}

@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"target": "es3",
+		"module": "amd",
+		"sourceMap": true
+	},
+	"exclude": [
+		".*",
+		"app/build",
+		"app/vendor",
+		"node_modules"
+	]
+}
